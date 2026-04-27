@@ -16,7 +16,6 @@
             min-height: 100vh;
         }
 
-        /* гамбургер-кнопка */
         .menu-toggle {
             position: fixed;
             top: 20px;
@@ -45,7 +44,6 @@
             border-radius: 2px;
         }
 
-        /* выезжающее меню */
         .menu-dropdown {
             position: fixed;
             top: 80px;
@@ -81,7 +79,6 @@
             border-left-color: white;
         }
 
-        /* основной контент */
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -105,6 +102,27 @@
             margin: 0 auto;
             line-height: 1.6;
         }
+        .btn-group {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #0a0a0a;
+            padding: 12px 28px;
+            border-radius: 48px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .btn:hover {
+            background: #ddd;
+            transform: scale(1.02);
+        }
         footer {
             margin-top: 80px;
             font-size: 0.8rem;
@@ -123,16 +141,20 @@
 <div class="menu-dropdown" id="menuDropdown">
     <a href="index.html">🏠 Главная</a>
     <a href="movies.html">🎬 Рандомайзер фильмов</a>
-    <!-- сюда можно добавить другие страницы -->
+    <a href="books.html">📚 Рандомайзер книг</a>
 </div>
 
 <div class="container">
-    <h1>Надоело спорить о выборе фильма на вечер?</h1>
+    <h1>Надоело спорить о выборе фильма или книги?</h1>
     <div class="message">
         Долгие поиски того, что посмотреть или почитать — в прошлом.<br>
         Мы поможем вам выбрать идеальный вариант. Быстро и без скучных споров.
     </div>
-    <footer>🎥 Просто откройте меню и выберите "Рандомайзер фильмов"</footer>
+    <div class="btn-group">
+        <a href="movies.html" class="btn">🎬 Выбрать фильм</a>
+        <a href="books.html" class="btn">📚 Выбрать книгу</a>
+    </div>
+    <footer>🎥📖 Просто откройте меню или нажмите на кнопку выше</footer>
 </div>
 
 <script>
